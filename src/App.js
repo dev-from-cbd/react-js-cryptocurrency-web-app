@@ -9,6 +9,7 @@ const App = () => {
         <h1>NavBar - React JS Cryptocurrency Web App</h1>
       </div>
       <div className="main">Main - React JS Cryptocurrency Web App</div>
+      <div className="footer">Footer - React JS Cryptocurrency Web App</div>
     </div>
   );
 };
