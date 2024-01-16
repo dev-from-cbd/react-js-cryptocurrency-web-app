@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar />
+        <Avatar src={icon} size="large" />
         <Typography.Title lavel={2} className="logo">
           <Link to="/">LOGO - React Cryptocurrency App</Link>
         </Typography.Title>
