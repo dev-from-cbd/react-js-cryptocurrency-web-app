@@ -18,7 +18,20 @@ const Navbar = () => {
         <Typography.Title lavel={2} className="logo">
           <Link to="/">LOGO - React Cryptocurrency App</Link>
         </Typography.Title>
-        <Button className="menu-control-container">Button</Button>
+        <Menu theme="dark">
+          <Menu.Item icon={<HomeOutlined />}>
+            <Link to="/">Home</Link>
+          </Menu.Item>
+          <Menu.Item icon={<FundOutlined />}>
+            <Link to="/cryptocurrencies">Cryptocurrencies</Link>
+          </Menu.Item>
+          <Menu.Item icon={<MoneyCollectOutlined />}>
+            <Link to="/money">Money</Link>
+          </Menu.Item>
+          <Menu.Item icon={<BulbOutlined />}>
+            <Link to="/faq">FAQ</Link>
+          </Menu.Item>
+        </Menu>
       </div>
     </div>
   );
