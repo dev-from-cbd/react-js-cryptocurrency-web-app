@@ -1,19 +1,35 @@
-//import React from "react";
+import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 
-import { Navbar } from "./components";
+import {
+  Exchanges,
+  Homepage,
+  News,
+  Cryptocurrencies,
+  CryptoDetails,
+  Navbar,
+} from "./components";
+import "./App.css";
 
-const App = () => {
-  return (
-    <div className="app">
-      <div className="navbar">
-        <Navbar />
-      </div>
-      <div className="main">Main - React JS Cryptocurrency Web App</div>
-      <div className="footer">Footer - React JS Cryptocurrency Web App</div>
+const App = () => (
+  <div className="app">
+    <div className="navbar">
+      <Navbar />
     </div>
-  );
-};
+    <div className="main">
+      <Layout>
+        <div className="routes">
+          <Switch>
+            <Route exact path="/">
+              <Homepage />
+            </Route>
+          </Switch>
+        </div>
+      </Layout>
+    </div>
+    <div className="footer">Footer</div>
+  </div>
+);
 
 export default App;

@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="logo-container">
         <Avatar src={icon} size="large" />
         <Typography.Title lavel={2} className="logo">
-          <Link to="/">LOGO - React Cryptocurrency App</Link>
+          <Link to="/">LOGO</Link>
         </Typography.Title>
         <Menu theme="dark">
           <Menu.Item icon={<HomeOutlined />}>
@@ -26,10 +26,10 @@ const Navbar = () => {
             <Link to="/cryptocurrencies">Cryptocurrencies</Link>
           </Menu.Item>
           <Menu.Item icon={<MoneyCollectOutlined />}>
-            <Link to="/money">Money</Link>
+            <Link to="/exchanges">Exchanges</Link>
           </Menu.Item>
           <Menu.Item icon={<BulbOutlined />}>
-            <Link to="/faq">FAQ</Link>
+            <Link to="news">News</Link>
           </Menu.Item>
         </Menu>
       </div>
