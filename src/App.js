@@ -27,8 +27,8 @@ const App = () => (
             <Route exact path="/exchanges">
               <Exchanges />
             </Route>
-            <Route exact path="/">
-              <Homepage />
+            <Route exact path="/cryptocurrencies">
+              <Cryptocurrencies />
             </Route>
             <Route exact path="/">
               <Homepage />
