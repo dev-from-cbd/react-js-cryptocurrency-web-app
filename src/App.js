@@ -31,7 +31,7 @@ const App = () => (
               <Exchanges />
             </Route>
             <Route exact path="/news">
-              <News />
+              <CryptoDetails />
             </Route>
           </Switch>
         </div>
