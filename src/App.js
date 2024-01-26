@@ -3,12 +3,12 @@ import { Switch, Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 
 import {
+  Navbar,
   Exchanges,
   Homepage,
-  News,
   Cryptocurrencies,
+  News,
   CryptoDetails,
-  Navbar,
 } from "./components";
 import "./App.css";
 
@@ -30,8 +30,11 @@ const App = () => (
             <Route exact path="/exchanges">
               <Exchanges />
             </Route>
-            <Route exact path="/news">
+            <Route exact path="/crypto/:coinId">
               <CryptoDetails />
+            </Route>
+            <Route exact path="/news">
+              <News />
             </Route>
           </Switch>
         </div>
